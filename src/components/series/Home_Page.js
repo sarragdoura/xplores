@@ -8,16 +8,14 @@ import Serie_Image from './Serie_Image';
 const scroll = {
   margin: "4px , 4px",
   padding: "4px",
-  height: "680px",
-  width:"100%",
+  height: "70vh",
   overflowX: "scroll",
   overflowY: "scroll",
   whiteSpace: "nowrap",
 
 }
 const fullscreen = {
-  height: "101vh",
-  width: "169.5vh"
+  height: "95vh"
 }
 const data = [
   {
@@ -360,26 +358,26 @@ const Home_Page = () => {
 
   return (
     <div style={fullscreen}>
-            <div class="row" style={{height:"70%"}}>
-                <div class="col-2" style={{ border: '1.5px solid #2d3e50' }}>
+            <div class="row" style={{height:"70vh"}}>
+                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2" style={{ border: '1.5px solid #2d3e50' }}>
                     <Serie_validation />
                 </div>
-                <div class="col-7 " style={{ border: '1.5px solid #2d3e50' }}>
+                <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7 " style={{ border: '1.5px solid #2d3e50' }}>
 
                     <div style={scroll}>
                         <Serie_table localData={localData} someHandlerProp={handler}  />
                     </div>
                 </div>
-                <div class="col" style={{ border: '1.5px solid #2d3e50' }}>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3" style={{ border: '1.5px solid #2d3e50' }}>
                     <Serie_Labelisation  rowD={rowData} setRowData={setRowData} setChageRow={change} />
                 </div>
             </div>
-            <div class="row" style={{height:"25%"}}>
-                <div class="col-2" style={{ border: '1.5px solid #2d3e50' }}></div>
-                <div class="col-7" style={{ border: '1.5px solid #2d3e50' }}>
+            <div class="row" style={{height:"25vh"}}>
+                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2" style={{ border: '1.5px solid #2d3e50' }}></div>
+                <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7" style={{ border: '1.5px solid #2d3e50' }}>
                     <Serie_Image />
                 </div>
-                <div class="col" style={{ border: '1.5px solid #2d3e50' }}>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3" style={{ border: '1.5px solid #2d3e50' }}>
                     <Serie_Description rowD={rowData} />
                 </div>
             </div>

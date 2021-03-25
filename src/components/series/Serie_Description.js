@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 const scroll = {
-    height: "100%",
+    height: "25vh",
     overflowX: "scroll",
     overflowY: "scroll",
     whiteSpace: "nowrap",
@@ -14,7 +14,6 @@ const Serie_Description = ({ rowD }) => {
                 <div class="row">
                     <h4 style={{color:"#00b379"}}>Description Serie labels</h4>
                 </div>
-                                    <br/>
                 
                         Vue Anatomique :{rowD.length===0 ? ("_"):(rowD[0].VueAnatomique)} <br/>
                         Injection :{rowD.length===0 ? ("_"):(rowD[0].Injection)} <br/>

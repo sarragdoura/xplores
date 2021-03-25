@@ -14,7 +14,7 @@ let App = () => {
         <div>
             {Array.from(Array(20), (e, i) => {
                 i = i + 1
-                return (<img style={{ width: 265, marginRight:20 }} src={logo}/>
+                return (<img style={{ width: "23vh", marginRight:20 }} src={logo}/>
                 )
             })}
         </div>

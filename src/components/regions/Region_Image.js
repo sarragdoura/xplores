@@ -17,7 +17,7 @@ let App = () => {
             i = i + 1
             return (
                 <td>
-                <img style={{ width: 265, marginRight:20 }} src={logo}/>
+                <img style={{ width: "20vh", marginRight:20 }} src={logo}/>
                 <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></input>
                         <label class="form-check-label" for="defaultCheck1">
@@ -37,7 +37,7 @@ export default class Region_Image extends Component {
    
     render() {
         return (
-            <div class="container " style={{height:"40%", marginLeft: "5px" }, scroll}  >
+            <div class="container " style={{marginLeft: "5px" }, scroll}  >
                 <table>
                     <tr>
                      <App/>

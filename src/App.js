@@ -8,13 +8,13 @@ function App() {
 	return (
 		<div className="App">
 
-<Router>
+			<Router>
 				<Switch>
 					<Route exact path="/" component={Button} />
 					<Route exact path="/re" component={SeriesRegions} />
 				</Switch>
-				
-			</Router> 
+
+			</Router>
 
 		</div>
 	);

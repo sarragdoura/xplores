@@ -33,10 +33,10 @@ font-weight: 600;
 export default class ROIs_validation extends Component {
     render() {
         return (
-            <div style={{ marginTop: "30%", marginLeft: "10" ,marginBottom:"20%" }}>
+            <div style={{  marginLeft: "10" }}>
                 <h4 style={{color:"#00b379"}}>ROIs validation</h4>
                 <h6 style={center}> Validate ROIs</h6>
-                <div style={{ marginTop: "20px" }} class="order-lg-last" >
+                <div style={{ marginTop: "10%" }} class="order-lg-last" >
                     <button to="/Serie" class="btn btn-primary">✓</button>
                     <HoverText to="/Serie" class="btn btn-danger">X</HoverText>
                 </div>
