@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home_Page from './components/series/Home_Page';
 import All from './components/regions/All';
 
@@ -22,8 +22,10 @@ export default class SeriesRegions extends Component {
 							</div>
 						</div>
 					</nav>
+					<Switch>
 					<Route path="/se" exact component={Home_Page} />
 					<Route path="/re" component={All} />
+					</Switch>
 			</Router>
 		)
 	}
